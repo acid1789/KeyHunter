@@ -9,6 +9,7 @@ namespace KeyHunter
     public class Input
     {
         public long sequence { get; set; }
+        public Out prev_out { get; set; }
         public string script { get; set; }
     }
 
@@ -46,7 +47,7 @@ namespace KeyHunter
         public string mrkl_root { get; set; }
         public int time { get; set; }
         public int bits { get; set; }
-        public int fee { get; set; }
+        public long fee { get; set; }
         public long nonce { get; set; }
         public int n_tx { get; set; }
         public int size { get; set; }

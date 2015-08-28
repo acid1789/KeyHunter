@@ -9,14 +9,13 @@ namespace KeyHunter
     class Transaction
     {
         public string Hash;
-        public long[] Sources;
-        public Destination[] Destinations;
+        public MoneyPlace[] Sources;
+        public MoneyPlace[] Destinations;
     }
 
-    class Destination
+    class MoneyPlace
     {
         public string Address;
         public long Value;
-        public long ID;
     }
 }
